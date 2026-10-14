@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #1a202c;
+    background-color: #f8faf9;
+  }
+  
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Universal form control defaults: Dark black #111827 on white/light backgrounds */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]),
+  textarea,
+  select {
+    color: #111827;
+  }
+
+  /* Medium gray #6B7280 placeholder text across browsers */
+  input::placeholder,
+  textarea::placeholder {
+    color: #6B7280 !important;
+    opacity: 1 !important;
+  }
+
+  /* Dropdown option and optgroup styling: crisp dark text on clean light background across all platforms */
+  option,
+  optgroup {
+    color: #111827 !important;
+    background-color: #ffffff !important;
+  }
+
+  /* Standard autofill styling to preserve contrast */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-text-fill-color: inherit;
+  }
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f3;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

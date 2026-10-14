@@ -1,0 +1,10 @@
+{
+  "name": "EcoPulse & RoadGuard — Vijayawada & Guntur",
+  "description": "AI-assisted road damage detection, pothole priority reporting, and environmental civic action for Vijayawada and Guntur, Andhra Pradesh.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
